@@ -1,0 +1,27 @@
+{
+	"folders": [
+		{
+			"name": "hypr",
+			"path": "../hypr"
+		},
+		{
+			"name": "nwg-bar",
+			"path": "../nwg-bar"
+		},
+		{
+			"name": "wofi",
+			"path": "../wofi"
+		},
+		{
+			"name": "waybar",
+			"path": "."
+		},
+		{
+			"path": "../theme"
+		},
+		{
+			"path": "../eww"
+		}
+	],
+	"settings": {}
+}

@@ -1,0 +1,220 @@
+@import "../theme/colors.css";
+@import "../theme/spotify.css";
+
+* {
+  border-color: transparent;
+  border-radius: 0;
+  font-size: 15px;
+  min-height: 0;
+  box-shadow: none; /* Remove predefined box-shadow */
+  text-shadow: none; /* Remove predefined text-shadow */
+}
+
+#waybar {
+  padding: 0;
+  background: transparent;
+  color: black;
+  font-family: "Adwaita Sans", "Fira Code Nerd Font";
+  font-weight: bold;
+}
+
+#custom-power {  
+  padding-left: 1rem;
+  padding-right: 1rem;
+  
+  margin: 5px 0 0 8px;
+
+  border-radius: 18px 0 0 18px;
+  border: 5px solid @color0;
+  border-right: 0px;
+
+  background: @color1;
+}
+
+#custom-power:hover {
+  transition: ease-in-out 300ms;
+  background-color: @color4
+}
+
+#window {
+  padding-left: 1rem;
+  padding-right: 2rem;
+
+  margin: 5px 5px 0 0;
+
+  border-radius: 0 18px 18px 0;
+  border-width: 5px 5px 5px 0;
+  border-style: solid;
+  border-color: @color0;
+  background: @color1;
+}
+
+#window:hover {
+  background-color: @color4;
+  transition: ease-in-out 300ms;
+}
+
+#tray {
+  background: @color1;
+  margin: 5px 0 0 0;
+  padding: 0 1rem 0 1rem;
+  border-radius: 18px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: @color0;
+}
+
+#workspaces {
+  background-color: @color0;
+  border-radius: 18px;
+  margin: 5px 0 0 0;
+}
+
+#workspaces button {
+  color: @color7;
+  border-radius: 18px;
+  margin: 4px;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+#workspaces button.empty {
+  color: @color7;
+}
+
+#workspaces button.active {
+  color: black;
+  background: @color1;
+}
+
+#workspaces button:hover {
+  color: black;
+  background: @color3;
+  border-color: transparent;
+  border-top: 1px;
+  border-bottom: 1px;
+  transition: ease-in-out 300ms;
+}
+
+#workspaces button.urgent {
+  color: tomato;
+}
+
+#mpris {
+  margin: 5px 0 0 0; 
+  padding-right: 1rem;
+  padding-left: 1rem;
+  margin-right: 1rem;
+  background: @color1;
+  border-radius: 18px;
+  border-width: 5px;
+  border-color: @color0;
+  border-style: solid;
+  font-weight: lighter;
+}
+
+#mpris.spotify {
+  background: @spotify;
+  color: @spotify-text;
+}
+
+#battery {
+  background: @color1;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  border-radius: 18px 0 0 18px;
+  border-width: 5px 0 5px 5px;
+  border-style: solid;
+  border-color: @color0;
+  margin: 5px 0 0 0;
+}
+
+#battery.charging {
+  color: rgb(114, 255, 114);
+}
+
+#battery.warning:not(.charging) {
+  color: tomato;
+}
+
+#battery:hover {
+  background-color: @color4;
+  transition: ease-in-out 300ms;
+}
+
+#network {
+  background: @color1;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  margin: 5px 0 0 0;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  border-width: 5px 0 5px 0;
+  border-style: solid;
+  border-color: @color0;
+}
+
+#network:hover {
+  background-color: @color4;
+  transition: ease-in-out 300ms;
+}
+
+#power-profiles-daemon {
+  background: @color1;
+  margin: 5px 0 0 0;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  border-width: 5px 0 5px 0;
+  border-style: solid;
+  border-color: @color0;
+}
+
+#power-profiles-daemon:hover {
+  background-color: @color4;
+  transition: ease-in-out 300ms;
+}
+
+#bluetooth {
+  background: @color1;
+  margin: 5px 0 0 0;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  border-width: 5px 0 5px 0;
+  border-style: solid;
+  border-color: @color0;
+}
+
+#bluetooth:hover {
+  background-color: @color4;
+  transition: ease-in-out 300ms;
+}
+
+#pulseaudio {
+  background: @color1;
+  margin: 5px 0 0 0;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  border-width: 5px 0 5px 0;
+  border-style: solid;
+  border-color: @color0;
+}
+
+#pulseaudio:hover {
+  background-color: @color4;
+  transition: ease-in-out 300ms;
+}
+
+#clock {
+  background: @color1;
+  border-radius: 0 18px 18px 0;
+  margin: 5px 8px 0 0;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  border-width: 5px 5px 5px 0;
+  border-style: solid;
+  border-color: @color0;
+}
+
+#clock:hover {
+  background-color: @color4;
+  transition: ease-in-out 300ms;
+}

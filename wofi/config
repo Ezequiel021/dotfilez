@@ -1,0 +1,12 @@
+width=25%
+
+hide_scroll = true
+allow_images = true
+image_size = 25
+prompt=
+normal_window = false
+term=alacritty
+
+matching=fuzzy
+insensitive=true
+columns=1
