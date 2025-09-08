@@ -1,0 +1,11 @@
+# Ignore everything
+/*
+
+# But keep these
+!/waybar/
+!/nwg-bar/
+!/wofi/
+!/kitty/
+
+!/README.md
+!/.gitignore
