@@ -1,0 +1,17 @@
+[
+    {
+        "label": "External Monitor",
+        "exec": "bash /home/ramos/.config/hypr/scripts/monitor-config.sh external",
+        "icon": "/usr/share/icons/Adwaita/symbolic/devices/video-display-symbolic.svg"
+    },
+    {
+        "label": "Internal Monitor",
+        "exec": "bash /home/ramos/.config/hypr/scripts/monitor-config.sh laptop",
+        "icon": "/usr/share/icons/Adwaita/symbolic/devices/video-single-display-symbolic.svg"
+    },
+    {
+        "label": "Extend",
+        "exec": "bash /home/ramos/.config/hypr/scripts/monitor-config.sh extend",
+        "icon": "/usr/share/icons/Adwaita/symbolic/devices/video-joined-displays-symbolic.svg"
+    }
+]

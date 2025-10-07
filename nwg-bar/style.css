@@ -1,0 +1,39 @@
+
+window {
+    background-color: transparent;
+}
+
+/* Outer bar container, takes all the window width/height */
+#outer-box {
+	margin: 0px;
+}
+
+/* Inner bar container, surrounds buttons */
+#inner-box {
+	/*background: rgba (255, 255, 255, 0.8);*/
+	background: linear-gradient(45deg, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, .7), rgba(255, 255, 255, 0.8));
+	border-radius: 1.5rem;
+	border-style: none;
+	border-width: 1px;
+	border-color: rgba (156, 142, 122, 0.7);
+	padding: 1rem;
+	margin: 1rem;
+}
+
+button {
+	font-family: "Space Mono Medium", "0xProto Nerd Font";
+	font-size: 17px;
+	background: none;
+	border: none;
+	box-shadow: none;
+	color: rgb(20, 20, 20);
+	text-shadow: none;
+	outline: none;
+	padding: 1rem;
+}
+
+button:focus {
+	background-color: rgba (0, 0, 0, 0.1);
+	border-radius: 1rem;
+	outline: none;
+}
