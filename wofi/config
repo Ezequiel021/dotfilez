@@ -7,6 +7,5 @@ prompt=
 normal_window = false
 term=alacritty
 
-matching=fuzzy
 insensitive=true
 columns=1
