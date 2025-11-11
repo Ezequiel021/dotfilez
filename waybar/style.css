@@ -1,4 +1,5 @@
-@import "../../.cache/wal/colors-waybar.css";
+/*@import "../../.cache/wal/colors-waybar.css";*/
+@import "colors.css";
 /*@import "../theme/spotify.css";*/
 
 * {
@@ -7,124 +8,135 @@
 
 #waybar {
   background: transparent;
-  font-family: "Adwaita Sans";
+  font-family: "JetBrains Mono";
   font-weight: bolder;
-  font-size: 15;
-  color: @color7;
+  font-size: 15px;
+  color: @on_surface;
 }
 
 tooltip label {
-  background-color: @color0;
-  border: 2px solid @color2;
-  border-radius: 4px;
-  padding: 0 12px 0 12px;
+  background-color: @background;
+  border-radius: 18px;
+  padding: 0 12px;
   margin: 5px 0 0 5px;
 }
 
 #custom-power {
-  padding: 0 13px 0 8px;
-  border-radius: 4px;
+  padding: 0 13px 0 9px;
+  border-radius: 18px;
   margin: 5px 0 0 5px;
-  background: @color0;
-  border: 2px solid @color2;
+  background: @background;
 }
 
 #custom-power:hover {
-  background-color: @color1;
+  background-color: @primary;
+  color: @on_primary;
 }
 
 #window {
-  padding: 0 8px 0 8px;
+  padding: 0 24px;
   margin: 5px 0 0 5px;
-  background: @color0;
-  border: 2px solid @color2;
-  border-radius: 4px;
-}
-
-#window:hover {
-  background: @color1;
+  background: @primary;
+  color: @on_primary;
+  border-radius: 18px;
 }
 
 #workspaces {
   margin: 5px 0 0 5px;
-  background-color: @color0;
-  border: 2px solid @color2;
-  border-radius: 4px;
-}
-
-#tray {
-  background: @color0;
-  margin: 5px 0 0 5px;
-  padding: 0 1rem 0 1rem;
-  border: 2px solid @color2;
-  border-radius: 5px;
-}
-
-#tray:hover {
-  background: @color1;
-}
-
-#tray menu {
-  padding: 8px;
-  background: @color0;
-  border: 2px solid @color2;
-  border-radius: 4px;
-}
-
-#tray menuitem {
-  padding: 4px 8px;
-  border-radius: 4px;
-  transition: all ease-in 150ms;
-}
-
-#tray menuitem:hover {
-  background: @color1;
-}
+  padding: 0 4px;
+  background-color: @background;
+  border-radius: 18px;
+} 
 
 #workspaces button {
-  border-radius: 4px;
-  margin: 2px;
+  transition: all ease-in-out 200ms;
+  background: @secondary;
+  color: @on_secondary;
+  border-radius: 16px;
+  margin: 6px 3px;
   padding: 0 12px 0 12px;
-  transition: all ease-in 250ms;
-  border: 2px solid transparent;
 }
 
 #workspaces button.empty {
-  color: rgb(209, 171, 171);
+  background: @surface_variant;
+  color: @on_surface_variant;
 }
 
 #workspaces button.active {
-  transition: all ease-in 50ms;
-  border: 2px solid @color2;
+  min-width: 30px;
+  background: @primary;
+  color: @on_primary;
 }
 
 #workspaces button:hover {
-  background: @color1;
+  background: @primary;
+  color: @on_primary;
+  transition: all ease-in 100ms;
 }
 
 #workspaces button.urgent {
   color: tomato;
 }
 
-#mpris {
+#tray {
+  background: @surface;
+  color: @on_surface;
   margin: 5px 0 0 5px;
-  background: @color0;
-  border-radius: 4px;
-  border: 2px solid @color2;
-  font-weight: lighter;
+  padding: 0 1rem 0 1rem;
+  border-radius: 18px 0 0 18px;
+  transition: all ease-in-out 200ms;
 }
 
-#mpris.spotify {
-  background: @color1;
-  color: @color0;
+#tray menu {
+  padding: 8px;
+  background: @surface;
+  border-radius: 18px;
+}
+
+#tray menuitem {
+  padding: 4px 8px;
+  margin: 5px 0;
+  border-radius: 8px;
+  background-color: @surface_variant;
+  color: @on_surface_variant;
+  transition: all ease-in 150ms;
+}
+
+#tray menuitem:disabled {
+  background-color: @surface;
+  color: @on_surface;
+}
+
+#tray menuitem:hover {
+  background: @primary;
+  color: @on_primary;
+}
+
+#tray:hover {
+  background-color: @primary;
+  color: @on_primary;
+  transition: none;
+}
+
+#mpris {
+  margin: 5px 0 0 5px;
+  background: @background;
+  border-radius: 18px;
+  transition: all ease-in-out 200ms;
+}
+
+#mpris:hover {
+  background-color: @primary;
+  color: @on_primary;
+  transition: none;
 }
 
 #battery {
-  background: @color0;
+  background: @surface;
+  color: @on_surface;
   padding: 0 12px 0 12px;
-  border-radius: 4px;
-  border: 2px solid @color2;
-  margin: 5px 0 0 5px;
+  margin: 5px 0 0 0;
+  transition: all ease-in-out 200ms;
 }
 
 #battery.charging {
@@ -136,65 +148,71 @@ tooltip label {
 }
 
 #battery:hover {
-  background-color: @color1;
+  background-color: @primary;
+  color: @on_primary;
+  transition: none;
 }
 
 #network {
-  background: @color0;
+  background: @background;
   padding: 0 12px 0 12px;
   border-radius: 4px;
   border: 2px solid @color2;
   margin: 5px 0 0 5px;
-}
-
-#network:hover {
-  background-color: @color1;
 }
 
 #power-profiles-daemon {
-  background: @color0;
-  padding: 0 15px 0 10px;
-  border-radius: 4px;
-  border: 2px solid @color2;
-  margin: 5px 0 0 5px;
+  background: @surface;
+  color: @on_surface;
+  padding: 0 12px 0 9px;
+  margin: 5px 0 0 0;
+  transition: all ease-in-out 200ms;
 }
 
 #power-profiles-daemon:hover {
-  background-color: @color1;
+  background-color: @primary;
+  color: @on_primary;
+  transition: none;
 }
 
 #bluetooth {
-  background: @color0;
+  background: @surface;
+  color: @on_surface;
   padding: 0 12px 0 12px;
-  border-radius: 4px;
-  border: 2px solid @color2;
-  margin: 5px 0 0 5px;
+  margin: 5px 0 0 0;
 }
 
 #bluetooth:hover {
-  background-color: @color1;
+  background-color: @primary;
+  color: @on_primary;
 }
 
 #pulseaudio {
-  background: @color0;
-  padding: 0 13px 0 8px;
-  border-radius: 4px;
-  border: 2px solid @color2;
-  margin: 5px 0 0 5px;
+  background: @surface;
+  color: @on_surface;
+  padding: 0 12px 0 12px;
+  margin: 5px 0 0 0;
+  transition: all ease-in-out 200ms;
 }
 
 #pulseaudio:hover {
-  background-color: @color1;
+  background-color: @primary;
+  color: @on_primary;
+  transition: none;
 }
 
 #clock {
-  background: @color0;
-  padding: 0 13px 0 8px;
-  border-radius: 4px;
-  border: 2px solid @color2;
-  margin: 5px 5px 0 5px;
+  background: @surface;
+  color: @on_surface;
+  padding: 0 12px 0 12px;
+  margin: 5px 5px 0 0;
+  border-radius: 0 18px 18px 0;
+  transition: all ease-in-out 200ms;
 }
 
 #clock:hover {
-  background-color: @color1;
+  background-color: @primary;
+  color: @on_primary;
+  transition: none;
 }
+

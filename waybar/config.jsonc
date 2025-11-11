@@ -1,9 +1,9 @@
 {
     "layer": "top",
     "height": 36,
-    "modules-left": ["custom/power", "hyprland/workspaces"],
+    "modules-left": ["hyprland/workspaces"],
     "modules-center": ["hyprland/window"],
-    "modules-right": ["tray", "mpris", "battery", "power-profiles-daemon", "bluetooth", "pulseaudio", "clock"],
+    "modules-right": ["mpris", "tray", "battery", "power-profiles-daemon", "bluetooth", "pulseaudio", "clock"],
     "reload_style_on_change": true,
 
     "battery": {
@@ -89,9 +89,9 @@
 	    "format-paused": "{status_icon} <i>{dynamic}</i>",
 	    "player-icons": {
             "firefox": "󰖟",
-		"default": "▶",
-		"spotify": "",
-        "vlc": "󰕼"
+		    "default": "▶",
+		    "spotify": "",
+            "vlc": "󰕼"
 	    },
 	    "status-icons": {
 		    "paused": ""
